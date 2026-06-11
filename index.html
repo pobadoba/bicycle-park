@@ -57,11 +57,18 @@
                 <hr />
                 <img src="images/5.png" class="images">
                 <p>bicycle park.</p>
+                <button id="5-yes-button">why?</button>
+                <button id="5-no-button" class="no-button">no.</button>
+            </div>
+            <div id="6" class="hidden">
+                <hr />
+                <p>this park was for abandoning bicycles in plain sight, only a few meters from human civilization. but they may become <i>free</i>.</p>
+                <button id="6-no-button" class="no-button">ok.</button>
             </div>
         </main>
 
         <footer>
-            <div>2026 Spring KAIST ID20012 Project - Bumgyu</div>
+            <div>2026 spring kaist id20012 project - bumgyu</div>
         </footer>
     </div>
 
@@ -111,6 +118,18 @@
 
             document.getElementById('4-yes-button').addEventListener('click', () => {
                 setVisible(['1', '2', '3', '4', '5']);
+            });
+
+            document.getElementById('5-yes-button').addEventListener('click', () => {
+                setVisible(['1', '2', '3', '4', '5', '6']);
+            });
+
+            document.getElementById('5-no-button').addEventListener('click', () => {
+                setVisible(['1']);
+            });
+
+            document.getElementById('6-no-button').addEventListener('click', () => {
+                setVisible(['1']);
             });
         });
     </script>
