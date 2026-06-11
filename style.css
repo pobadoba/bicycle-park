@@ -191,7 +191,20 @@ aside {
   margin-bottom: 0;
 }
 
-/* Site Button: */
+/* Site Button: */  
+button {
+    padding: 10px 30px;
+    background-color: var(--link-color);
+    color: var(--text-color);
+    border-radius: var(--round-borders);
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.2s ease-in-out;
+}
+.no-button {
+    background-color: var(--text-color);
+    color: var(--link-color);
+}
 
 .site-button {
   display: flex;
